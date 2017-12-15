@@ -9,7 +9,12 @@ $(function() {
         var self = this;
 
         self.control_url = ko.observable(window.location.protocol + "//" + window.location.hostname + ":8080/control.htm");
-
+        
+        $("#navbar_settings").before("\
+            <li id=\"#navbar_plugin_camcontrol\">\
+                <a href=\"" + self.control_url() + "\" target=\"_blank\"><span class=\"fa fa-video-camera\"></span></a>\
+            </li>\
+        ");
     }
 
     OCTOPRINT_VIEWMODELS.push({
