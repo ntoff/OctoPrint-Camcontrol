@@ -7,3 +7,4 @@ dist
 *.egg*
 .DS_Store
 *.zip
+octoprint_camcontrol/templates/camcontrol_navbar.jinja2.old
